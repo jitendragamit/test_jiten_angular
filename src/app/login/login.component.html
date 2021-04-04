@@ -1,0 +1,30 @@
+<h2 class="text-center">Login</h2>
+<div class="row">
+	<div class="col-md-4">
+	</div>
+	<div class="col-md-4 col-md-offset-5">
+		<div class="jumbotron">
+			<form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" >
+				<div class="form-group">
+					<label for="username">Usename</label>
+					<input type="username" name="username" formControlName="username" autocomplete="off" class="form-control input-sm" placeholder="Username">
+				</div>
+				
+				<div class="form-group">
+					<label for="Password">Password</label>
+					<input type="password" name="Password" formControlName="password" autocomplete="off" class="form-control input-sm" placeholder="Password">
+				</div>
+				
+				<div class="form-group">
+					<label for="nickname">Nickname</label>
+					<input type="nickname" name="nickname" formControlName="nickname" autocomplete="off" class="form-control input-sm" placeholder="Nickname">
+				</div>
+				
+				
+				<button type="submit" class="btn btn-success" >Login</button>
+			</form>
+		</div>
+	</div>
+	<div class="col-md-5">
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center" > Score Details</h2>
+     <!-- <button class="btn btn-success text-right"  (click)="addUser()"> Add User</button> -->
+      <table class="table table-striped">
+        <thead>
+        <tr>
+		  <th>ID</th>
+          <th>nickname</th>
+	    </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of users">
+	      <td>{{user.Id}}</td>
+          <td>{{user.username}}</td>
+	    </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
