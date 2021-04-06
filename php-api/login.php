@@ -9,9 +9,11 @@ if(isset($postdata) && !empty($postdata))
 	$username = mysqli_real_escape_string($mysqli, trim($request->username));
 	$nickname = mysqli_real_escape_string($mysqli, trim($request->nickname));
 
-	$sql = "SELECT * FROM users where username='$username' and password='$pwd'";
+    $pwd = md5($pwd);
 
-    $result = mysqli_query($mysqli,$sql);
+	$sql = "SELECT * FROM users where username='$username' and password='$pwd'";
+	
+	$result = mysqli_query($mysqli,$sql);
 	
 	$rowcount=mysqli_num_rows($result);
 	
