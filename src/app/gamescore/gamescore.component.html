@@ -7,13 +7,17 @@
         <thead>
         <tr>
 		  <th>ID</th>
-          <th>nickname</th>
+          <th>Nick name</th>
+		  <th>Score</th>
+		  <th>Time Taken</th>
 	    </tr>
         </thead>
         <tbody>
         <tr *ngFor="let user of users">
 	      <td>{{user.Id}}</td>
           <td>{{user.username}}</td>
+		  <td>{{user.score}}</td>
+		  <td>{{user.time_taken}}</td>
 	    </tr>
         </tbody>
       </table>

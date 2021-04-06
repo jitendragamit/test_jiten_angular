@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GamescoreComponent } from './gamescore/gamescore.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { GamescoreComponent } from './gamescore/gamescore.component';
     LoginComponent,
   //  RegisterComponent,
     DashboardComponent,
-    GamescoreComponent
+    GamescoreComponent,
+    ThankyouComponent
   ],
   
   imports: [

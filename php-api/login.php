@@ -17,11 +17,6 @@ if(isset($postdata) && !empty($postdata))
 	
 	if ($rowcount <= 0) {
 			$request = json_decode($postdata);
-			
-			//$username = trim($request->username);
-			//$pwd = mysqli_real_escape_string($mysqli, trim($request->password));
-			//$nickname = mysqli_real_escape_string($mysqli, trim($request->nickname));
-			
 			$sql = "INSERT INTO users(username, password, nickname) VALUES ('$username','$pwd','$nickname')";
 		    $ret = $mysqli->query($sql);
 			
@@ -33,19 +28,7 @@ if(isset($postdata) && !empty($postdata))
 				'Id' => mysqli_insert_id($mysqli)
 				];
 				echo json_encode($authdata);
-			
-			/*
-			if ($mysqli->query($sql) === TRUE) {
-				$authdata = [
-				'username' => $username,
-				'pwd' => '',
-				'nickname' => $nickname,
-				'Id' => mysqli_insert_id($mysqli)
-				];
-				echo json_encode($authdata);
-			}
-			**/
-	
+				
 	} else {
 		$rows = array();
 		while($row = mysqli_fetch_assoc($result))
@@ -54,6 +37,5 @@ if(isset($postdata) && !empty($postdata))
 		}
 		echo json_encode($rows);
 	}
-	
 }
 ?>

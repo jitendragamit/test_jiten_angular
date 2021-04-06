@@ -33,9 +33,11 @@ export class GamescoreComponent implements OnInit {
 			  item.username,
 			  item.user_type,
 			  item.pwd,
+			  item.time_taken,
+			  item.score
 			);
 		  });
 		});
 	}
-
+	
 }

@@ -35,4 +35,6 @@ export class AppComponent {
 	this.dataService.deleteToken();
 	window.location.href = window.location.href;
 	}
+	
+	
 }
