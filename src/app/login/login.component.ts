@@ -44,8 +44,9 @@ export class LoginComponent implements OnInit {
 		
 		//this.router.navigate(['create']);
 		},
+		
 		error => {
-		alert("User name or password is incorrect")
+		    //alert("User name or password is incorrect")
 		});
 	}
 	

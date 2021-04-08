@@ -21,7 +21,7 @@ export class ApiService {
 	constructor(private httpClient : HttpClient) { }
 	
 	public userlogin(username, password, nickname) {
-		alert(username)
+		//alert(username)
 		return this.httpClient.post<any>(this.baseUrl + '/login.php', { username, password, nickname })
 		.pipe(map(Users => {
 		this.setToken(Users[0].username);
