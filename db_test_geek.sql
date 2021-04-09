@@ -63,7 +63,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`Id`, `username`, `password`, `nickname`, `user_type`) VALUES
 (3, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'admin'),
-(14, 'jiten', '02ef428c4cade90c0abe7a614e4163d3', 'alpha', 'learner'),
 (17, 'john', '527bd5b5d689e2c32ae974c6229ff785', 'johnnick', 'learner'),
 (18, 'test', '098f6bcd4621d373cade4e832627b4f6', 'testn', 'learner');
 
