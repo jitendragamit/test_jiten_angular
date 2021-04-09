@@ -14,11 +14,10 @@ export class ApiService {
 	//baseUrl:string = "http://localhost/angular-admin/php";  
 	// On Cent os VM
 	//baseUrl:string = "http://192.168.230.135/angular-admin/php";
+	//baseUrl:string = "http://localhost:81/angular-admin/php-api";
+	// baseUrl:string = "https://jitendragamit.com/php-api";
 	
-	// baseUrl:string = "http://localhost:81/angular-admin/php-api";
-	
-	baseUrl:string = "https://jitendragamit.com/php-api";
-	
+	baseUrl:string = "https://limitless-sea-31198.herokuapp.com";
 	
 	@Output() getLoggedInName: EventEmitter<any> = new EventEmitter();
 	constructor(private httpClient : HttpClient) { }
