@@ -5,6 +5,7 @@ ErrorDocument 403 "<H1>Page not found</H1>"
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+Header set Access-Control-Allow-Origin "*"
 
 # otherwise forward it to index.php
 #RewriteRule . web/index.php
