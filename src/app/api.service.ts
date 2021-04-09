@@ -17,7 +17,7 @@ export class ApiService {
 	
 	// baseUrl:string = "http://localhost:81/angular-admin/php-api";
 	
-	baseUrl:string = "http://jitendragamit.com/php-api";
+	baseUrl:string = "https://jitendragamit.com/php-api";
 	
 	
 	@Output() getLoggedInName: EventEmitter<any> = new EventEmitter();
