@@ -15,9 +15,9 @@ export class ApiService {
 	// On Cent os VM
 	//baseUrl:string = "http://192.168.230.135/angular-admin/php";
 	
-	// baseUrl:string = "http://localhost:81/angular-admin/php-api";
+	baseUrl:string = "http://localhost:81/angular-admin/php-api";
 	
-	baseUrl:string = "http://jitendragamit.com/php-api";
+	//baseUrl:string = "http://jitendragamit.com/php-api";
 	
 	
 	@Output() getLoggedInName: EventEmitter<any> = new EventEmitter();
