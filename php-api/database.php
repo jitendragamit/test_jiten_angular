@@ -13,12 +13,12 @@ $db_username = 'root';
 $db_password = '';
 $db_name = 'db_test_geek';
 
-/*
+
 $db_host = 'localhost';
 $db_username = 'jitendra_jitendb';
 $db_password = '~Gamit123';
 $db_name = 'jitendra_gamit';
-***/
+
 
 
 /*
