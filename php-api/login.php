@@ -31,6 +31,9 @@ if(isset($postdata) && !empty($postdata))
 				];
 				echo json_encode($authdata);
 				
+	
+	
+	
 	} else {
 		$rows = array();
 		while($row = mysqli_fetch_assoc($result))

@@ -22,19 +22,26 @@ export class DashboardComponent implements OnInit {
   constructor(private dataService: ApiService,private router:Router) { }
 
   ngOnInit() {
+	   setTimeout(() => {
+		return this.index = 9;
+		}, 5000);
+		
+		//return this.index = 0;
   }
   
    imagesx = ['../assets/download.jpg', '../assets/download2.jpg', '../assets/image3.jpg'];	
    
    clickEvent() {
-	   
-	        let user_id = localStorage.getItem('user_id'); 
+	       setTimeout(() => {
+				return this.index = 9;
+			}, 5000);
+	       
+			let user_id = localStorage.getItem('user_id'); 
 			
 	     	this.dataService.addScore(user_id)
 			.pipe(first())
 			.subscribe(
 			data => {
-			   // alert(data[0].score);
 			   if (data[0].score >= 3) {
 			      this.router.navigate(['thankyou']);
 			  }

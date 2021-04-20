@@ -14,8 +14,8 @@ export class LoginComponent implements OnInit {
 	angForm: FormGroup;
 	constructor(private fb: FormBuilder,private dataService: ApiService,private router:Router) {
 	this.angForm = this.fb.group({
-	//username: ['', [Validators.required,Validators.minLength(1), Validators.name]],
-	username: ['', Validators.required],
+	username: ['', [Validators.required,Validators.minLength(1)]],
+	//username: ['', Validators.required],
 	password: ['', Validators.required],
 	nickname: ['', Validators.required]
 	});
@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
 		},
 		
 		error => {
-		    //alert("User name or password is incorrect")
+		    alert("User name or password is incorrect")
 		});
 	}
 	
