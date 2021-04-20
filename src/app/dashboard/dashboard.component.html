@@ -2,13 +2,19 @@
 <p align="center">Welcome to Play the Game</p>
    
 <div class="row justify-content-center">
-		<div *ngIf="!index">
-			<img src="{{imagesx[0]}}">
-		</div>
 		
-		<div *ngIf="index">
+	<ng-template [ngIf]="index" [ngIfElse]="loggedOut">	
+		<div>
 			<img src="{{imagesx[index]}}">
 		</div>
+    </ng-template> 		
+		
+	<ng-template #loggedOut>	
+		<div>
+			<img src="{{imagesx[0]}}">
+		</div>
+	</ng-template>	
+	
 </div>
 <br/><br/>
 <div class="row justify-content-center">
